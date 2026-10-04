@@ -59,3 +59,8 @@ ingresada para reducir errores durante el registro.
 
 El sistema permite consultar la información registrada
 de los pacientes de manera organizada.
+
+## Organización del sistema
+
+El proyecto está organizado en diferentes módulos para facilitar
+su mantenimiento y permitir una mejor distribución de las funciones.
