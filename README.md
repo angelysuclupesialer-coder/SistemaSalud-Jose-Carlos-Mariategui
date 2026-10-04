@@ -69,3 +69,9 @@ su mantenimiento y permitir una mejor distribución de las funciones.
 
 La documentación permite conocer las principales funciones
 del sistema y facilita su comprensión y mantenimiento.
+
+
+## Versión final
+
+El proyecto cuenta con una estructura organizada y funcionalidades
+básicas para la gestión de pacientes y sus procesos relacionados.
