@@ -34,3 +34,8 @@ Los datos incluidos son ficticios y solo se usan para demostración académica.
 
 El sistema permite registrar pacientes, consultar sus datos,
 validar el DNI y proteger parcialmente la información personal.
+
+## Gestión de citas
+
+El sistema permite organizar y registrar las citas de los pacientes,
+facilitando el control de la atención médica.
