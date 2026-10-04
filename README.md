@@ -64,3 +64,8 @@ de los pacientes de manera organizada.
 
 El proyecto está organizado en diferentes módulos para facilitar
 su mantenimiento y permitir una mejor distribución de las funciones.
+
+## Documentación del proyecto
+
+La documentación permite conocer las principales funciones
+del sistema y facilita su comprensión y mantenimiento.
