@@ -1,0 +1,130 @@
+@startuml
+title Sistema Integral de Gestión y Atención - Puesto de Salud José Carlos Mariátegui
+
+class Persona {
+ - nombre
+ - apellido
+ - telefono
+ + nombre_completo()
+ + mostrar_datos()
+}
+class Paciente {
+ - codigo
+ - dni
+ - fecha_nacimiento
+ + mostrar_datos()
+}
+class Profesional {
+ - codigo
+ - especialidad
+ + mostrar_datos()
+}
+class Cita {
+ - codigo
+ - fecha
+ - hora
+ - tipo_atencion
+ - profesional
+ - estado: EstadoCita
+ + confirmar()
+ + cancelar()
+ + reprogramar()
+ + marcar_atendida()
+}
+class Atencion {
+ - codigo
+ - fecha
+ - motivo
+ - observacion
+}
+class Teleorientacion {
+ - codigo
+ - fecha
+ - motivo
+ - estado: EstadoTeleorientacion
+ + atender()
+}
+class Emergencia {
+ - codigo
+ - fecha
+ - descripcion
+ - estado: EstadoEmergencia
+ + iniciar_atencion()
+ + derivar()
+ + marcar_atendida()
+}
+class Referencia {
+ - codigo
+ - motivo
+ - destino
+ - estado: EstadoReferencia
+ + enviar()
+ + atender()
+}
+class Medicamento {
+ - codigo
+ - nombre
+ - lote
+ - vencimiento
+ - stock
+ - stock_minimo
+ + entrada()
+ + salida()
+ + tiene_stock_bajo()
+}
+class Insumo {
+ - codigo
+ - nombre
+ - cantidad
+ - cantidad_minima
+ + tiene_stock_bajo()
+}
+class SistemaService <<Singleton>>
+
+enum EstadoCita {
+ PROGRAMADA
+ CONFIRMADA
+ REPROGRAMADA
+ ATENDIDA
+ CANCELADA
+}
+enum EstadoEmergencia {
+ REPORTADA
+ EN_ATENCION
+ DERIVADA
+ ATENDIDA
+}
+enum EstadoTeleorientacion {
+ PENDIENTE
+ EN_ATENCION
+ ATENDIDA
+ CANCELADA
+}
+enum EstadoReferencia {
+ PENDIENTE
+ ENVIADA
+ ATENDIDA
+ CANCELADA
+}
+
+Persona <|-- Paciente
+Persona <|-- Profesional
+Paciente "1" o-- "0..*" Cita
+Paciente "1" o-- "0..*" Atencion
+Paciente "1" o-- "0..*" Teleorientacion
+Paciente "1" o-- "0..*" Emergencia
+Paciente "1" o-- "0..*" Referencia
+Cita "1" *-- "0..1" Atencion
+Cita --> EstadoCita
+Emergencia --> EstadoEmergencia
+Teleorientacion --> EstadoTeleorientacion
+Referencia --> EstadoReferencia
+SistemaService o-- Paciente
+SistemaService o-- Profesional
+SistemaService o-- Cita
+SistemaService o-- Atencion
+SistemaService o-- Emergencia
+SistemaService o-- Referencia
+SistemaService o-- Medicamento
+SistemaService o-- Insumo
+@enduml

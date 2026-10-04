@@ -1,0 +1,26 @@
+from enum import Enum
+
+class EstadoCita(Enum):
+    PROGRAMADA = "PROGRAMADA"
+    CONFIRMADA = "CONFIRMADA"
+    REPROGRAMADA = "REPROGRAMADA"
+    ATENDIDA = "ATENDIDA"
+    CANCELADA = "CANCELADA"
+
+class EstadoEmergencia(Enum):
+    REPORTADA = "REPORTADA"
+    EN_ATENCION = "EN ATENCION"
+    DERIVADA = "DERIVADA"
+    ATENDIDA = "ATENDIDA"
+
+class EstadoTeleorientacion(Enum):
+    PENDIENTE = "PENDIENTE"
+    EN_ATENCION = "EN ATENCION"
+    ATENDIDA = "ATENDIDA"
+    CANCELADA = "CANCELADA"
+
+class EstadoReferencia(Enum):
+    PENDIENTE = "PENDIENTE"
+    ENVIADA = "ENVIADA"
+    ATENDIDA = "ATENDIDA"
+    CANCELADA = "CANCELADA"
