@@ -39,3 +39,8 @@ validar el DNI y proteger parcialmente la información personal.
 
 El sistema permite organizar y registrar las citas de los pacientes,
 facilitando el control de la atención médica.
+
+## Gestión de historias clínicas
+
+El sistema permite almacenar y consultar información relacionada
+con la historia clínica de los pacientes.
