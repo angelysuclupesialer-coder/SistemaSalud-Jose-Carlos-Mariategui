@@ -44,3 +44,8 @@ facilitando el control de la atención médica.
 
 El sistema permite almacenar y consultar información relacionada
 con la historia clínica de los pacientes.
+
+## Seguridad de la información
+
+El sistema considera medidas básicas para proteger los datos
+personales de los pacientes y mantener la información organizada.
