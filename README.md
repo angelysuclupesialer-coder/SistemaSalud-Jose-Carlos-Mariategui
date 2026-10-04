@@ -54,3 +54,8 @@ personales de los pacientes y mantener la información organizada.
 
 El sistema realiza validaciones básicas de la información
 ingresada para reducir errores durante el registro.
+
+## Consulta de pacientes
+
+El sistema permite consultar la información registrada
+de los pacientes de manera organizada.
