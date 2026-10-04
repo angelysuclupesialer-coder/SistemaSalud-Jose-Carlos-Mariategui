@@ -29,3 +29,8 @@ python main.py
 python -m pytest -q
 
 Los datos incluidos son ficticios y solo se usan para demostración académica.
+
+## Funcionalidades del módulo de pacientes
+
+El sistema permite registrar pacientes, consultar sus datos,
+validar el DNI y proteger parcialmente la información personal.
