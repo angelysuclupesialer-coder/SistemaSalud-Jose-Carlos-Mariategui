@@ -49,3 +49,8 @@ con la historia clínica de los pacientes.
 
 El sistema considera medidas básicas para proteger los datos
 personales de los pacientes y mantener la información organizada.
+
+## Validación de datos
+
+El sistema realiza validaciones básicas de la información
+ingresada para reducir errores durante el registro.
